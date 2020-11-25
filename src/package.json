@@ -1,0 +1,58 @@
+{
+    "name": "nativescript-echo",
+    "version": "1.3.0",
+    "description": "A nativescript plugin for laravel-echo.",
+    "main": "laravel-echo",
+    "typings": "index.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "7.0.0",
+            "ios": "7.0.1"
+        }
+    },
+    "scripts": {
+        "tsc": "npm i && tsc",
+        "build": "npm run tsc && npm run build.native",
+        "build.native": "node scripts/build-native.js",
+        "eslint": "cd .. && eslint \"**/*.ts\"",
+        "ci.tslint": "npm i && eslint '**/*.ts'",
+        "prepack": "npm run build.native",
+        "plugin.prepare": "npm run build && cd ../demo && ns plugin remove laravel-echo-nativescript && ns plugin add ../src",
+        "clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i"
+    },
+    "keywords": [
+        "NativeScript",
+        "JavaScript",
+        "Android",
+        "iOS"
+    ],
+    "author": {
+        "name": "Radu Mihai Diaconu",
+        "email": "radu0071@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/happones/nativescript-laravel-echo/issues"
+    },
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/happones/nativescript-laravel-echo",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "@nativescript/core": "^7.0.13",
+        "@nativescript/types": "^7.0.4",
+        "prompt": "^1.0.0",
+        "rimraf": "^3.0.2",
+        "semver": "^7.3.2",
+        "eslint": "7.10.0",
+        "prettier": "2.1.2",
+        "@typescript-eslint/eslint-plugin": "4.2.0",
+        "@typescript-eslint/parser": "4.2.0",
+        "@typescript-eslint/eslint-plugin-tslint": "4.8.1",
+        "typescript": "~4.1.2"
+    },
+    "dependencies": {
+        "nativescript-socket.io": "^0.11.1",
+        "nativescript-websockets": "^1.5.6",
+        "pusher-nativescript": "^1.0.0"
+    },
+    "bootstrapper": "nativescript-plugin-seed"
+}
