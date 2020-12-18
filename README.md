@@ -1,5 +1,5 @@
 # NativeScript Laravel-Echo
-
+This project is forked from https://market.nativescript.org/plugins/nativescript-laravel-echo/ but updated for using Nativescript 7
 [![npm](https://img.shields.io/npm/v/nativescript-echo.svg)](https://www.npmjs.com/package/nativescript-echo)
 [![npm](https://img.shields.io/npm/dt/nativescript-echo.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-echo)
 
@@ -37,7 +37,7 @@ class BroadcastServiceProvider extends ServiceProvider
 
 Describe your plugin installation steps. Ideally it would be something like:
 
-`$ tns plugin add nativescript-laravel-echo`
+`$ ns plugin add nativescript-echo`
 
 ## Usage 
 
