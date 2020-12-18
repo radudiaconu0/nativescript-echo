@@ -1,9 +1,11 @@
 # NativeScript Laravel-Echo
 This project is forked from https://market.nativescript.org/plugins/nativescript-laravel-echo/ but updated for using Nativescript 7
+
+
 [![npm](https://img.shields.io/npm/v/nativescript-echo.svg)](https://www.npmjs.com/package/nativescript-echo)
 [![npm](https://img.shields.io/npm/dt/nativescript-echo.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-echo)
 
-[![NPM](https://nodei.co/npm/nativescript-laravel-echo.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/nativescript-echo)
+[![NPM](https://nodei.co/npm/nativescript-echo.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/nativescript-echo)
 
 This is a [laravel-echo](https://github.com/laravel/echo/blob/master/src/channel/pusher-channel.ts) plugin for native applications made with nativescript
 
