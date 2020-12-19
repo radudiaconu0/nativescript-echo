@@ -67,7 +67,7 @@ class Event implements ShouldBroadcast
 
 **Javascript**	
 ```javascript
-const TnsEcho = require('nativescript-laravel-echo').TnsEcho;
+const TnsEcho = require('nativescript-echo').TnsEcho;
 
 const token = 'Asdsd3dsdsTytf';//Your token
 
@@ -88,7 +88,7 @@ Echo.channel('YourChannel').listen('Event', e => {
 })
 
 //presence channel for others
-const http = require('tns-core-modules/http');
+const http = require('@nativesript/core/http');
 
 http.request({
     //....
@@ -102,7 +102,7 @@ http.request({
     
 **TypeScript**	  
 ```typescript
-import { TnsEcho } from 'nativescript-laravel-echo';
+import { TnsEcho } from 'nativescript-echo';
 
 const token = 'Asdsd3dsdsTytf';//Your token
 
