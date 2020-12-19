@@ -123,7 +123,7 @@ this.Echo.channel('YourChannel').listen('Event', e => {
 })
 
 //presence channel for others
-import * as http from 'tns-core-modules/http';
+import * as http from '@nativescript/core/http';
 
 http.request({
     //....
